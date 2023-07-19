@@ -1,0 +1,160 @@
+html {
+    background: radial-gradient(farthest-corner at right top,#21A09D, #06182D);
+    height: 100%;
+    font-family: 'Roboto', cursive;
+}
+
+.conteudo {
+    padding: 3em 3em 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+h1{
+    margin: 0em 0em .5em 0em;
+    text-align: center;
+}
+
+.principal {
+    flex-grow: 1;
+    flex-basis: auto;
+    min-width: 600px;
+    padding: 3em 2em 2em;
+    box-sizing: border-box;
+    display: flex;
+    background: rgb(89, 123, 158);
+    border-radius: 10px;
+    gap: 2em;
+}
+
+.mochila {
+    margin-top: .6em;
+    min-width: 170px;
+    max-width: 170px;
+    height: 180px;
+    padding-top: 80px;
+    background-color: #1b5335;
+    box-shadow: inset 0 6px 0 2px #395843, 0 -93px 0 -77px #162014, 0 -93px 0 -72px #2f6842, 0 -93px 0 -68px #1d271e;
+    background-image: linear-gradient(to right, transparent 5px, transparent 20px, transparent 1px, transparent 25px, transparent 5px, 
+    transparent 20px, transparent 20px, transparent 86px, #4b6d4f 45px, #195214 230px, transparent 25px, transparent 172px );
+    background-position: center 254px;
+    background-size: 305px 6px;
+    background-repeat: repeat-x; 
+    border: 5px solid #242c24;
+    border-radius: 85px 85px 44px 44px;
+    display: inline-block;
+    vertical-align: top;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+
+  
+.mochila:before, .mochila:after {
+    display: block;
+    content: '';
+    position: absolute;
+  }
+  
+.mochila:before {
+    height: 75px;
+    width: 118px;
+    background-image: radial-gradient(circle closest-corner at 13px 29px , #ffffff, #bbb7b7 2px, transparent 2px, transparent), 
+    radial-gradient(circle closest-corner at 13px 29px , #394438, #2d352d 4px, transparent 4px, transparent),
+     linear-gradient(to bottom, transparent 10px, transparent 15px, #161a16 5px, #1b1f1b 18px, transparent 18px, transparent 100px), 
+     linear-gradient(to right, rgb(114, 138, 113) 10px, #7c977b 10px, transparent 10px, transparent 16px, #6d8a6c 9px, #3c6847 50px), 
+     linear-gradient(to bottom, #6d8a6c 8px, #6d8a6c 16px, #232b23 8px, #1e241d 30px, #6d8a6c 20px, #6d8a6c 72px, #6d8a6c 10px, #6d8a6c 57px, #6d8a6c 5%);
+    margin-left: 22px;
+    margin-top: 58px;
+    border: 4px solid #121810;
+    border-radius: 11px;
+    box-shadow: 0 4px 0 0 #304e2b, inset 0px 4px 1px 0 rgb(105, 124, 107);
+    content: '||';
+    color: transparent;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) -2px -86px 0px;
+    font-size: 14px;
+}
+  
+.mochila:after {
+    margin-left: 67px;
+    margin-top: -30px;
+    background: #6a7d99;
+    width:26px;
+    height:26px;
+    border: 3px solid #131811;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+
+.adicionar {
+    width: 100%;
+}
+
+.adicionar input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: 2px solid #1a1140;
+}
+
+#nome:hover, #quantidade:hover{
+    background-color: rgb(221, 221, 221);
+    transition: .2s;
+}
+
+.adicionar label {
+    display: block;
+}
+
+.cadastrar {
+    background-color: #111240;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.cadastrar:hover{
+    background-color: rgb(157, 157, 194);
+    color: #000000;
+    transition: .2s;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.item:hover {
+    background-color: rgb(221, 221, 221);
+    transition: .2s;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    Background: #798aa5;
+    font-weight: 400;
+}
+
